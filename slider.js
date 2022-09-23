@@ -14,7 +14,7 @@ let slider1 = tns({
       gutter:10
     },
     768: {
-      items:3,
+      items:4,
       gutter:10
     },
     300:{
@@ -42,7 +42,7 @@ let slider2 = tns({
       gutter:10
     },
     768: {
-      items:3,
+      items:4,
       gutter:20
     },
     300:{

@@ -132,7 +132,7 @@ main{
   align-items: center;
 }
 .topAnime{
-  height: 350px;
+  height: 320px;
 }
 
 .container, .container2{
@@ -145,7 +145,7 @@ main{
 }
 
 .container2{
-  margin-top: -35px;
+  margin-top: -55px;
 }
 
 .subcontainer{
@@ -198,30 +198,62 @@ main{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(62, 163, 174);
   border-radius: 10px;
   width: 160px;
-  height: 200px;
+  height: 230px;
   position: relative;
   cursor: pointer;
+  border-radius: 10px;
+  transition: 0.4s ease-in-out;
 }
 
-.title{
-  height: 40px;
+.title-div{
+  height: 300px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
   font-family: var(--text-font--);
   font-size: 1.4rem;
   position: absolute;
-  bottom: 0;
-  transition: 1s;
-  background-color: #555;
+  display: none;
 }
+
+.title{
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.infoBtn{
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 80px;
+  padding: 0.5em;
+  background: none;
+  color: white;
+  border: 2px white solid;
+  border-radius: 10px;
+}
+
 .slide-img img{
   width: 100%;
   height: 230px;
+  transform: scale(0.9);
+  border-radius: 15px;
+}
+
+.slide:hover .title-div{
+  display: flex;
+}
+.slide:hover{
+  transform: scale(1.1);
+}
+.slide:hover img{
+  filter: blur(4px);
+  -webkit-filter: blur(4px)
 }
 
 @media only screen 
@@ -231,22 +263,31 @@ main{
     .container,.container2{
       width: 100%;
       height: 300px;
+      outline: none;
     }
     .container2{
       margin-top: -90px;
     }
     .subcontainer{
       height: 230px;
+      outline: none;
     }
-
+    header{
+      height: 80px;
+    }
+    .logo-text{
+      font-size: 1.5rem;
+    }
     .banner-container, .banner img{
+      height: 220px;
+    }
+    .topAnime{
       height: 200px;
     }
-  
-    .slide{
-      width: 140px;
-      height: 160px;
-      margin-left:10px;
+    .slide, .slide img{
+      height: 200px;
+      margin-left:0px;
+      border-radius: 20px;
     }
 }
 
@@ -265,7 +306,7 @@ main{
   
     .slide{
       width: 180px;
-      margin-left: 20px;
+      margin-left: 10px;
     }
 }
 
