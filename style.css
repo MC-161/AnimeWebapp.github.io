@@ -303,6 +303,9 @@ main{
     .subcontainer{
       height: 290px;
     }
+    .banner-container, .banner img{
+      height: 300px;
+    }
   
     .slide{
       width: 180px;
