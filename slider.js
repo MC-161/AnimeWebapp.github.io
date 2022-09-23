@@ -1,17 +1,17 @@
 let slider1 = tns({
   container : '.slider',
-  'slideBy' : 1,
+  'slideBy' : 2,
   'speed' : 400,
   'nav' : false,
   controlsContainer:'#controls',
   responsive:{
     1600: {
-      items:10,
-      gutter:20
+      items:8,
+      gutter:100
     },
     1024: {
-      items:7,
-      gutter:200
+      items:8,
+      gutter:10
     },
     768: {
       items:3,
@@ -19,14 +19,14 @@ let slider1 = tns({
     },
     300:{
       items:3,
-      gutter:0
+      gutter:100
     }
   }
 })
 
 let slider2 = tns({
   container : '.slider-2',
-  'slideBy' : 1,
+  'slideBy' : 2,
   'speed' : 400,
   'nav' : false,
   controlsContainer:'#controls2',
@@ -38,8 +38,8 @@ let slider2 = tns({
       gutter:20
     },
     1024: {
-      items:7,
-      gutter:200
+      items:8,
+      gutter:10
     },
     768: {
       items:3,
@@ -47,7 +47,7 @@ let slider2 = tns({
     },
     300:{
       items:3,
-      gutter:0
+      gutter:100
     }
   }
 })
