@@ -1,53 +1,47 @@
-let slider1 = tns({
-  container : '.slider',
-  'slideBy' : 2,
-  'speed' : 400,
-  'nav' : false,
-  controlsContainer:'#controls',
-  responsive:{
-    1600: {
-      items:8,
-      gutter:100
+let swiper1 = new Swiper(".topswiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  navigation: {
+      nextEl: ".next",
+      prevEl: ".previous",
     },
-    1024: {
-      items:8,
-      gutter:10
+  breakpoints: {
+    300: {
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
     768: {
-      items:4,
-      gutter:10
+      slidesPerView: 4,
+      spaceBetween: 40,
     },
-    300:{
-      items:3,
-      gutter:100
-    }
-  }
-})
+    1024: {
+      slidesPerView: 8,
+      spaceBetween: 50,
+    },
+    },
+});
 
-let slider2 = tns({
-  container : '.slider-2',
-  'slideBy' : 2,
-  'speed' : 400,
-  'nav' : false,
-  controlsContainer:'#controls2',
-  prevButton:'.previous2',
-  nextButton:'.next2',
-  responsive:{
-    1600: {
-      items:10,
-      gutter:20
+let swiper2 = new Swiper(".bottomswiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  navigation: {
+      nextEl: ".next2",
+      prevEl: ".previous2",
     },
-    1024: {
-      items:8,
-      gutter:10
+  breakpoints: {
+      300: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 8,
+        spaceBetween: 50,
+      },
     },
-    768: {
-      items:4,
-      gutter:20
-    },
-    300:{
-      items:3,
-      gutter:100
-    }
-  }
-})
+});

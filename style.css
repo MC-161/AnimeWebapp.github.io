@@ -193,7 +193,7 @@ main{
   opacity: 0.3;
 }
 
-.slide{
+.swiper-slide{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,7 +204,7 @@ main{
   position: relative;
   cursor: pointer;
   border-radius: 10px;
-  transition: 0.4s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .title-div{
@@ -245,17 +245,6 @@ main{
   border-radius: 15px;
 }
 
-.slide:hover .title-div{
-  display: flex;
-}
-.slide:hover{
-  transform: scale(1.1);
-}
-.slide:hover img{
-  filter: blur(4px);
-  -webkit-filter: blur(4px)
-}
-
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -282,9 +271,9 @@ main{
       height: 220px;
     }
     .topAnime{
-      height: 200px;
+      height: 250px;
     }
-    .slide, .slide img{
+    .swiper-slide, .slide img{
       height: 200px;
       margin-left:0px;
       border-radius: 20px;
@@ -307,9 +296,20 @@ main{
       height: 300px;
     }
   
-    .slide{
+    .swiper-slide{
       width: 180px;
       margin-left: 10px;
+    }
+
+    .swiper-slide:hover .title-div{
+      display: flex;
+    }
+    .swiper-slide:hover{
+      transform: scale(1.1);
+    }
+    .swiper-slide:hover img{
+      filter: blur(4px);
+      -webkit-filter: blur(4px)
     }
 }
 
@@ -319,6 +319,16 @@ main{
   and (-webkit-min-device-pixel-ratio: 1) { 
     .container, .container2{
       width: 100%;
+    }
+    .swiper-slide:hover .title-div{
+      display: flex;
+    }
+    .swiper-slide:hover{
+      transform: scale(1.1);
+    }
+    .swiper-slide:hover img{
+      filter: blur(4px);
+      -webkit-filter: blur(4px)
     }
 }
 
