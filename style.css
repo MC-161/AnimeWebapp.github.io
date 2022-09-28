@@ -123,7 +123,7 @@ main{
   flex-direction: column;
 }
 
-.recommendations, .topAnime{
+.recommendations, .topAnime, .Upcoming{
   color: white;
   height: 400px;
   background-color: #050505;
@@ -135,10 +135,13 @@ main{
   height: 320px;
 }
 
-.container, .container2{
+.Upcoming{
+  height: 300px;
+}
+
+.container, .container2, .container3{
   width: 1600px;
   margin: auto;
-  outline: red solid 1px;
   height: 350px;
   display: flex;
   margin-top: 10px;
@@ -148,10 +151,13 @@ main{
   margin-top: -55px;
 }
 
+.container3{
+  margin-top: -50px;
+}
+
 .subcontainer{
   width: 95%;
   margin: auto;
-  outline: green 1px solid;
   height: 300px;
 }
 
@@ -173,7 +179,7 @@ main{
   font-family:var(--text-font--) ;
 }
 
-.previous,.previous2, .next2, .next{
+.btn{
   color: white;
   padding: 2px;
   width: 30px;
@@ -185,11 +191,11 @@ main{
   background-color: #050505;
 }
 
-.previous:hover,.previous2:hover, .next2:hover, .next:hover{
+.btn:hover{
   border: 3px solid grey;
 }
 
-.previous:active, .next:active{
+.btn:active{
   opacity: 0.3;
 }
 
@@ -249,7 +255,7 @@ main{
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .container,.container2{
+    .container,.container2, .container3{
       width: 100%;
       height: 300px;
       outline: none;
@@ -278,6 +284,16 @@ main{
       margin-left:0px;
       border-radius: 20px;
     }
+    .btn{
+      display: none;
+    }
+    .swiper-slide:hover .title-div{
+      display: flex;
+    }
+    .swiper-slide:hover img{
+      filter: blur(4px);
+      -webkit-filter: blur(4px)
+    }
 }
 
 
@@ -285,7 +301,7 @@ main{
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
-    .container,.container2{
+    .container,.container2, .container3{
       width: 100%;
       height: 300px;
     }
@@ -304,9 +320,7 @@ main{
     .swiper-slide:hover .title-div{
       display: flex;
     }
-    .swiper-slide:hover{
-      transform: scale(1.1);
-    }
+
     .swiper-slide:hover img{
       filter: blur(4px);
       -webkit-filter: blur(4px)
@@ -317,7 +331,7 @@ main{
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
-    .container, .container2{
+    .container, .container2, .container3{
       width: 100%;
     }
     .swiper-slide:hover .title-div{

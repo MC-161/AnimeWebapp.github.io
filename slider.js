@@ -16,8 +16,8 @@ let swiper1 = new Swiper(".topswiper", {
       spaceBetween: 40,
     },
     1024: {
-      slidesPerView: 8,
-      spaceBetween: 50,
+      slidesPerView: 7,
+      spaceBetween: 30,
     },
     },
 });
@@ -40,8 +40,32 @@ let swiper2 = new Swiper(".bottomswiper", {
         spaceBetween: 40,
       },
       1024: {
-        slidesPerView: 8,
-        spaceBetween: 50,
+        slidesPerView: 7,
+        spaceBetween: 30,
+      },
+    },
+});
+
+let swiper3 = new Swiper(".uswiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  navigation: {
+      nextEl: ".next3",
+      prevEl: ".previous3",
+    },
+  breakpoints: {
+      300: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 7,
+        spaceBetween: 30,
       },
     },
 });
