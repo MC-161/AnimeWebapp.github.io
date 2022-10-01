@@ -24,7 +24,6 @@ const renderAnime = (animes, dom_element) => {
             let slide_imgDiv = document.createElement('div')
             slide_imgDiv.classList.add('slide-img')
             let animeImage = document.createElement('img')
-            animeImage.setAttribute('dataId', anime.mal_id)
             animeImage.src = `${anime.images.jpg.image_url}`
             slide_imgDiv.appendChild(animeImage)
             slideDiv.appendChild(slide_imgDiv)
@@ -39,6 +38,10 @@ const renderAnime = (animes, dom_element) => {
             let infoBtn = document.createElement('button')
             infoBtn.innerText = 'Info'
             infoBtn.classList.add('infoBtn')
+            infoBtn.setAttribute('dataId', anime.mal_id)
+            infoBtn.addEventListener('click', e => {
+              handleAnimeSelection(e)
+            })
             titleDiv.appendChild(title)
             titleDiv.appendChild(infoBtn)
             
@@ -53,12 +56,28 @@ const getMW = () => {
     getAnime(url, '.mw')
 }
 const getTop = () => {
-    let url = 'https://api.jikan.moe/v4/top/anime'
+    let url = 'https://api.jikan.moe/v4/top/manga'
     getAnime(url, '.top')
 }
 const getUpcoming = () => {
-    let url = 'https://api.jikan.moe/v4/top/anime'
+    let url = 'https://api.jikan.moe/v4/seasons/upcoming'
     getAnime(url, '.up')
+}
+
+const getInfo = async(id) => {
+  const response = await fetch(`https://api.jikan.moe/v4/anime/${id}`)
+  const data = await response.json()
+  showAnimeInfo(data)
+}
+
+const showAnimeInfo = (anime) => {
+  let url = anime.data.url
+  window.open(url,"_self")
+}
+
+const handleAnimeSelection = (e) => {
+  const id = e.target.getAttribute('dataID')
+  getInfo(id)
 }
 
 // event listeners

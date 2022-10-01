@@ -8,7 +8,7 @@ let swiper1 = new Swiper(".topswiper", {
     },
   breakpoints: {
     300: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     768: {
@@ -32,7 +32,7 @@ let swiper2 = new Swiper(".bottomswiper", {
     },
   breakpoints: {
       300: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 20,
       },
       768: {
@@ -56,7 +56,7 @@ let swiper3 = new Swiper(".uswiper", {
     },
   breakpoints: {
       300: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 20,
       },
       768: {

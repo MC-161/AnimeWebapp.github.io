@@ -123,7 +123,7 @@ main{
   flex-direction: column;
 }
 
-.recommendations, .topAnime, .Upcoming{
+.topManga, .topAnime, .Upcoming{
   color: white;
   height: 400px;
   background-color: #050505;
@@ -147,12 +147,12 @@ main{
   margin-top: 10px;
 }
 
-.container2{
-  margin-top: -0px;
+.container{
+  margin-top: -20px;
 }
 
-.container3{
-  margin-top: -0px;
+.container2{
+  margin-top: -20px;
 }
 
 .subcontainer{
@@ -260,8 +260,11 @@ main{
       height: 300px;
       outline: none;
     }
+    .container{
+      margin-top: -40px;
+    }
     .container2{
-      margin-top: -90px;
+      margin-top: 100px;
     }
     .subcontainer{
       height: 230px;
@@ -279,8 +282,12 @@ main{
     .topAnime{
       height: 250px;
     }
-    .swiper-slide, .slide img{
-      height: 200px;
+    .topManga{
+      height: 500px;
+    }
+    .swiper-slide, .slide-img img{
+      width: 200px;
+      height: 300px;
       margin-left:0px;
       border-radius: 20px;
     }
