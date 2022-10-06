@@ -56,8 +56,10 @@ const getMW = () => {
     getAnime(url, '.mw')
 }
 const getTop = () => {
-    let url = 'https://api.jikan.moe/v4/top/manga'
-    getAnime(url, '.top')
+  const d = new Date();
+  let year = d.getFullYear()
+  let url = `https://api.jikan.moe/v4/seasons/${year}/summer`
+  getAnime(url, '.top')
 }
 const getUpcoming = () => {
     let url = 'https://api.jikan.moe/v4/seasons/upcoming'
@@ -71,8 +73,17 @@ const getInfo = async(id) => {
 }
 
 const showAnimeInfo = (anime) => {
-  let url = anime.data.url
-  window.open(url,"_self")
+  let animeImg = anime.data.images.webp.large_image_url
+  let animeTitle = anime.data.title
+  let animeSynopsis = anime.data.synopsis
+  let animeStatus = anime.data.status
+  let animeEpisodes = anime.data.episodes
+  sessionStorage.setItem('animeImg', animeImg)
+  sessionStorage.setItem('animeTitle', animeTitle)
+  sessionStorage.setItem('animeSynopsis', animeSynopsis)
+  sessionStorage.setItem('animeStatus', animeStatus)
+  sessionStorage.setItem('animeEpisodes', animeEpisodes)
+  window.open('info.html',"_self")
 }
 
 const handleAnimeSelection = (e) => {
