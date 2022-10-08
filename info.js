@@ -9,6 +9,8 @@ let status1 = document.querySelector('.AorC')
 status1.innerText = sessionStorage.getItem('animeStatus')
 let anime_img = document.querySelector('.anime-img')
 anime_img.src= sessionStorage.getItem('animeImg')
+let bg = document.querySelector('.bg')
+bg.style.backgroundImage = `url('${anime_img.src}')`
 // Functions
 const airing = () =>{ 
   if(status1.innerText == 'Finished Airing'){

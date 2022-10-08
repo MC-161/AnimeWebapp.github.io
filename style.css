@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Monofett&display=swap');
 *{
   margin: 0;
@@ -24,7 +25,8 @@
 
 :root{
   --logo--font:'Monofett';
-  --text-font--:'Cute Font'
+  --text-font--:'cute font';
+  --text-font2--:'Montserrat', 'sans-serif';
 }
 
 body{
@@ -229,7 +231,7 @@ main{
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  font-family: var(--text-font--);
+  font-family: var(--text-font2--);
   font-size: 1.4rem;
   position: absolute;
   display: none;
