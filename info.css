@@ -90,7 +90,6 @@ main{
 }
 
 .img-container{
-  outline: red 1px solid;
   width: 530px;
   height: 760px;
   display: flex;
@@ -101,7 +100,6 @@ main{
 .img{
   width: auto;
   height: auto;
-  outline: green 1px solid;
 }
 
 .anime-img{
@@ -119,7 +117,6 @@ main{
 }
 
 .AnimeTitleDiv{
-  outline: blue 1px solid;
   font-family: var(--text-font--);
   font-size: 2.5rem;
   padding: 1rem;
