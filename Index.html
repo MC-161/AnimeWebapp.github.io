@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.css">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
   <header>
     <div class="logo-container">
-      <p class="logo-text">Aniworld</p>
+      <a class="homeLink" href="Index.html"><p class="logo-text">Aniworld</p></a>
     </div>
   </header>
   <section class="banner-container">
@@ -23,10 +24,79 @@
     </div>
   </section>
   <main>
-    <section class="recommendations"></section>
-    <section class="topAnime"></section>
-  </main>
+    <section class="Upcoming">
+      <div class="container3">
+        <div class="subcontainer">
+          <div class="slider-wrapper">
+            <div class="controller">
+              <div class="category-div">
+                <h2 class="catergory">Upcoming</h2>
+              </div>
+              <div id="controls2">
+                <button class="previous3 btn"><</button>
+                <button class="next3 btn">></button>
+              </div>
+            </div>
+            <div>
+              <div class="swiper uswiper">
+                <div class="swiper-wrapper up">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="topAnime">
+      <div class="container">
+        <div class="subcontainer">
+          <div class="slider-wrapper">
+            <div class="controller">
+              <div class="category-div">
+                <h2 class="catergory">Top Anime</h2>
+              </div>
+              <div id="controls">
+                <button class="previous btn"><</button>
+                <button class="next btn">></button>
+              </div>
+            </div>
+            <div>
+              <div class="swiper topswiper">
+                <div class="swiper-wrapper mw">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="topManga">
+      <div class="container2">
+        <div class="subcontainer">
+          <div class="slider-wrapper">
+            <div class="controller">
+              <div class="category-div">
+                <h2 class="catergory">Top Manga</h2>
+              </div>
+              <div id="controls2">
+                <button class="previous2 btn"><</button>
+                <button class="next2 btn">></button>
+              </div>
+            </div>
+            <div>
+              <div class="swiper bottomswiper">
+                <div class="swiper-wrapper top">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>  
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
+  <script src="slider.js"></script>
 </body>
 </html>
