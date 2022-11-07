@@ -41,7 +41,6 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: red 1px solid;
   z-index: -3;
 }
 
@@ -197,7 +196,6 @@ main{
     .img{
       width: inherit;
       height: inherit;
-      outline: green 1px solid;
     }
     .anime-img{
       height: 300px;
@@ -248,7 +246,6 @@ main{
     .img{
       width: inherit;
       height: inherit;
-      outline: green 1px solid;
     }
     .anime-img{
       height: 300px;
@@ -295,7 +292,6 @@ main{
       align-items: center;
     }
     .img-container{
-      outline: red 1px solid;
       width: 100%;
       height: 360px;
       display: flex;
@@ -306,7 +302,6 @@ main{
     .img{
       width: 200px;
       height: auto;
-      outline: green 1px solid;
     }
     
     .anime-img{
