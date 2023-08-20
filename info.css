@@ -278,9 +278,7 @@ main{
   
 
 @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (min-resolution: 192dpi) {
+  and (min-device-width: 1200px)  {
     body{
       width: 100%;;
     }
